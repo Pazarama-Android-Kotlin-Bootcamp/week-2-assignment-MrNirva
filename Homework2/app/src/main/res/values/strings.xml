@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">KotlinWeek2</string>
+
+    <string name="welcome_to_bauuss">Welcome to \nBauuss</string>
+    <string name="login">Login</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="username">Username</string>
+    <string name="email_hint">example@example.com</string>
+    <string name="password_hint">8+ characters</string>
+
+</resources>
