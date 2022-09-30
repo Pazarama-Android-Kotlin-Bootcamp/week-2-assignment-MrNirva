@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // open login page
         startActivity(Intent(this@MainActivity, LoginActivity::class.java))
 
     }

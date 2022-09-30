@@ -6,6 +6,7 @@ import android.widget.ImageView
 
 class SignupActivity : AppCompatActivity() {
 
+    // Create visibility image, visibility status and back button
     private lateinit var imgBack:ImageView
 
     private lateinit var imgVisibility:ImageView
@@ -16,13 +17,16 @@ class SignupActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
+        // binding process
         imgBack = findViewById(R.id.imgBack)
         imgVisibility = findViewById(R.id.imgVisibility)
 
+        // click back button to call onBackPressed()
         imgBack.setOnClickListener{
             onBackPressed()
         }
 
+        // switch between visibility states by pressing the eye sign
         imgVisibility.setOnClickListener {
 
             if(visibilityStatus){

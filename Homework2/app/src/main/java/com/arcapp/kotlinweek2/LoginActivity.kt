@@ -8,6 +8,7 @@ import android.widget.ImageView
 
 class LoginActivity : AppCompatActivity() {
 
+    // Create visibility image, visibility status and sign up button
     private lateinit var imgVisibility:ImageView
     private var visibilityStatus = true
 
@@ -17,9 +18,11 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        // binding process
         imgVisibility = findViewById(R.id.imgVisibility)
         btnSignUp = findViewById(R.id.btnSignUp)
 
+        // switch between visibility states by pressing the eye sign
         imgVisibility.setOnClickListener {
 
             if(visibilityStatus){
@@ -32,6 +35,7 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
+        // Clicking btnSignUp redirects to sign up page
         btnSignUp.setOnClickListener {
 
             val intent = Intent(this@LoginActivity, SignupActivity::class.java)
