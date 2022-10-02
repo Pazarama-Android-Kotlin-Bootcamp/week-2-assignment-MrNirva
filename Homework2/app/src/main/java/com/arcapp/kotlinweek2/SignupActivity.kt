@@ -21,7 +21,7 @@ class SignupActivity : AppCompatActivity() {
         imgBack = findViewById(R.id.imgBack)
         imgVisibility = findViewById(R.id.imgVisibility)
 
-        // click back button to call onBackPressed()
+        // back button call onBackPressed()
         imgBack.setOnClickListener{
             onBackPressed()
         }

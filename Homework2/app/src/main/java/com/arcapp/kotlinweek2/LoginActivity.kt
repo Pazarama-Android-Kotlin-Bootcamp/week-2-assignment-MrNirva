@@ -35,7 +35,7 @@ class LoginActivity : AppCompatActivity() {
 
         }
 
-        // Clicking btnSignUp redirects to sign up page
+        // redirects to sign up page
         btnSignUp.setOnClickListener {
 
             val intent = Intent(this@LoginActivity, SignupActivity::class.java)
